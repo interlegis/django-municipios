@@ -7,7 +7,7 @@ import sys
 import municipios
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -31,9 +31,7 @@ setup(
     author='ZNC Sistemas',
     author_email='contato@znc.com.br',
     url='https://github.com/znc-sistemas/django-municipios',
-    packages=[
-        'municipios',
-    ],
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[
     ],
@@ -51,10 +49,10 @@ setup(
         'Programming Language :: JavaScript',
         'Topic :: Utilities',
         'Natural Language :: Portuguese (Brazilian)'
-#        'Programming Language :: Python :: 2',
-#        'Programming Language :: Python :: 2.6',
-#        'Programming Language :: Python :: 2.7',
-#        'Programming Language :: Python :: 3',
-#        'Programming Language :: Python :: 3.3',
+        #        'Programming Language :: Python :: 2',
+        #        'Programming Language :: Python :: 2.6',
+        #        'Programming Language :: Python :: 2.7',
+        #        'Programming Language :: Python :: 3',
+        #        'Programming Language :: Python :: 3.3',
     ],
 )
